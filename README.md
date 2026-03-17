@@ -2,11 +2,15 @@
 
 Default translations for the MOTA DApp and related SvelteKit projects.
 
+## Repository layout
+
+All translations live under the **`i18n/`** folder: one subfolder per locale (e.g. `i18n/ja/`, `i18n/pt-br/`, `i18n/en/`). Each locale folder contains an `index.ts` that exports the merged translation.
+
 ## How to contribute
 
 1. **Fork** this repository and clone your fork.
-2. **Pick a locale** (e.g. create a new folder like `de/` for German) or **edit an existing** locale under its folder (e.g. `ja/`, `pt-br/`, `zh-cn/`).
-3. Add or update the translation file `index.ts` in that folder so it exports a merge with the base (English) and includes all **required fields** (see below).
+2. **Pick a locale**: create a new folder under `i18n/` (e.g. `i18n/de/` for German) or **edit an existing** one (e.g. `i18n/ja/`, `i18n/pt-br/`, `i18n/zh-cn/`).
+3. Add or update the translation file `index.ts` in that locale folder so it exports a merge with the base (English) and includes all **required fields** (see below).
 4. **Open a Pull Request** with a short description of the locale and any notes (e.g. regional variant, RTL).
 
 We welcome new languages and fixes to existing ones. Please keep translations in the **native language** for the locale (e.g. "日本語" for Japanese, "Português (Brasil)" for Brazilian Portuguese).
@@ -20,7 +24,7 @@ Each locale file must define a **`language`** block at the top level (in the **n
 | `language.name` | string | Yes | Short name of the language in its own language (e.g. "日本語", "Español"). |
 | `language.fullName` | string | Yes | Full name in the native language (e.g. "Português do Brasil"). |
 | `language.descriptiveName` | string | Yes | Short label for menus (e.g. "English (Int)", "中文 (简体)"). |
-| `language.code` | string | Yes | BCP 47 / locale code (e.g. `en`, `pt-br`, `zh-cn`). Must match the folder name. |
+| `language.code` | string | Yes | BCP 47 / locale code (e.g. `en`, `pt-br`, `zh-cn`). Must match the locale folder name under `i18n/`. |
 | `language.icon` | string | No | Emoji or icon identifier (e.g. `🇯🇵`, `🇧🇷`). |
 | `language.rtl` | boolean | No | `true` for right-to-left languages (e.g. Arabic), otherwise `false`. |
 
@@ -83,8 +87,8 @@ export default es;
 
 ### How to modify the scaffold
 
-- **New locale:** Copy an existing locale folder (e.g. `es/`), rename it to your locale code (e.g. `de/`), rename the partial variable (e.g. `dePartial`), translate the `language` block and as many keys as you want, and export the merged result (e.g. `const de: Translation = deepMergeDict(...); export default de;`).
-- **Existing locale:** Edit the partial inside `index.ts`. Add or change only the keys you need; structure (e.g. `common.account`, `navbar.home`) must match the base. Do not remove the imports or the final `deepMergeDict` + `export default` lines.
+- **New locale:** Copy an existing locale folder under `i18n/` (e.g. `i18n/es/`), rename it to your locale code (e.g. `i18n/de/`), rename the partial variable (e.g. `dePartial`), translate the `language` block and as many keys as you want, and export the merged result (e.g. `const de: Translation = deepMergeDict(...); export default de;`).
+- **Existing locale:** Edit the partial inside that locale’s `index.ts` under `i18n/<code>/`. Add or change only the keys you need; structure (e.g. `common.account`, `navbar.home`) must match the base. Do not remove the imports or the final `deepMergeDict` + `export default` lines.
 - **New keys:** When the base adds new keys, add them to your partial only if you want to translate them; otherwise they will fall back to English (see below).
 
 ### Fallback to English (International)
@@ -93,9 +97,10 @@ Any phrase or key that you **do not** include in your partial is taken from the 
 
 ## Repository structure
 
-- One folder per locale (e.g. `ja/`, `pt-br/`, `zh-cn/`).
-- Each folder contains `index.ts` exporting the merged translation (base + partial).
-- The base (English - International) is provided by the consuming project; this repo holds **partials** that override or add keys.
+- **`i18n/`** – all translations live here.
+- One subfolder per locale (e.g. `i18n/ja/`, `i18n/pt-br/`, `i18n/zh-cn/`, `i18n/en/`).
+- Each locale folder contains `index.ts` exporting the merged translation (base + partial).
+- The base (English - International) is in `i18n/en/`; this repo holds **partials** that override or add keys per locale.
 
 ## License
 
