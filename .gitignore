@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Dependencies (if any)
+node_modules/
+
+# Build / output
+dist/
+*.log
+.env
+.env.local
+.env.*.local
+
+# Optional: local overrides or scripts
+*.local.ts
