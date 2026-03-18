@@ -1,7 +1,7 @@
-import type { Translation } from "../i18n-types";
-import type { DeepPartial } from "$lib/helpers/i18n";
-import { deepMergeDict } from "$lib/helpers/i18n";
-import en from "../en/index";
+import type { Translation } from '../i18n-types';
+import type { DeepPartial } from '$lib/helpers/i18n';
+import { deepMergeDict } from '$lib/helpers/i18n';
+import en from '../en/index';
 
 const skPartial: DeepPartial<Translation> = {
 	language: {
