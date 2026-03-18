@@ -1,6 +1,6 @@
-import type { BaseTranslation } from '../i18n-types'
+import type { Translation } from '../i18n-types'
 
-const en: BaseTranslation = {
+const en: Translation = {
 	language: {
 		name: 'English',
 		fullName: 'English - International',
