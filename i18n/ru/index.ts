@@ -1,84 +1,84 @@
-import type { Translation } from '../i18n-types';
-import type { DeepPartial } from '$lib/helpers/i18n';
-import { deepMergeDict } from '$lib/helpers/i18n';
-import en from '../en/index';
+import type { Translation } from "../i18n-types";
+import type { DeepPartial } from "$lib/helpers/i18n";
+import { deepMergeDict } from "$lib/helpers/i18n";
+import en from "../en/index";
 
 const ruPartial: DeepPartial<Translation> = {
 	language: {
-		name: 'Русский',
-		fullName: 'Русский язык',
-		descriptiveName: 'Русский',
-		code: 'ru',
-		icon: '🇷🇺'
+		name: "Русский",
+		fullName: "Русский язык",
+		descriptiveName: "Русский",
+		code: "ru",
+		icon: "🇷🇺"
 	},
 
 	site: {
-		description: 'MOTA',
-		keywords: 'mota, sveltekit, dapp, blockchain, moneyx, paypass, ican, payto, oric, corepass, txms'
+		description: "MOTA",
+		keywords: "mota, sveltekit, dapp, blockchain, moneyx, paypass, ican, payto, oric, corepass, txms"
 	},
 
 	common: {
-		account: 'Аккаунт',
-		loading: 'Загрузка…',
-		error: 'Ошибка',
-		success: 'Успешно',
-		cancel: 'Отмена',
-		confirm: 'Подтвердить',
-		close: 'Закрыть',
-		back: 'Назад',
-		menu: 'Меню',
-		next: 'Далее',
-		submit: 'Отправить',
-		save: 'Сохранить',
-		edit: 'Редактировать',
-		delete: 'Удалить',
-		logout: 'Выйти',
-		online: 'В сети',
-		offline: 'Не в сети',
+		account: "Аккаунт",
+		loading: "Загрузка…",
+		error: "Ошибка",
+		success: "Успешно",
+		cancel: "Отмена",
+		confirm: "Подтвердить",
+		close: "Закрыть",
+		back: "Назад",
+		menu: "Меню",
+		next: "Далее",
+		submit: "Отправить",
+		save: "Сохранить",
+		edit: "Редактировать",
+		delete: "Удалить",
+		logout: "Выйти",
+		online: "В сети",
+		offline: "Не в сети",
 		theme: {
-			light: 'Светлая',
-			dark: 'Тёмная',
-			system: 'Системная'
+			light: "Светлая",
+			dark: "Тёмная",
+			system: "Системная"
 		}
 	},
 
 	helpers: {
 		coreIdValidation: {
-			error: 'Пожалуйста, введите корректный Core ID',
-			enterpriseError: 'Адреса корпоративной сети не могут использоваться для платежей',
-			requiredError: 'Core ID обязателен для заполнения'
+			error: "Пожалуйста, введите корректный Core ID",
+			enterpriseError: "Адреса корпоративной сети не могут использоваться для платежей",
+			requiredError: "Core ID обязателен для заполнения"
 		},
 		wallet: {
-			walletNotConfigured: 'Кошелёк не настроен.',
-			walletNotInstalled: 'Кошелёк не установлен или не включён.',
-			walletCannotConnect: 'Не удаётся подключить кошелёк.',
-			walletConnected: 'Кошелёк подключён.',
-			walletDisconnected: 'Кошелёк отключён.'
+			walletNotConfigured: "Кошелёк не настроен.",
+			walletNotInstalled: "Кошелёк не установлен или не включён.",
+			walletCannotConnect: "Не удаётся подключить кошелёк.",
+			walletConnected: "Кошелёк подключён.",
+			walletDisconnected: "Кошелёк отключён."
 		}
 	},
 
 	navbar: {
-		home: 'Главная',
-		support: 'Поддержка',
-		register: 'Регистрация',
-		login: 'Войти',
-		logout: 'Выйти',
-		connect: 'Подключить',
-		disconnect: 'Отключить',
-		profile: 'Профиль',
-		settings: 'Настройки'
+		home: "Главная",
+		support: "Поддержка",
+		register: "Регистрация",
+		login: "Войти",
+		logout: "Выйти",
+		connect: "Подключить",
+		disconnect: "Отключить",
+		profile: "Профиль",
+		settings: "Настройки"
 	},
 
 	footer: {
-		home: 'Главная',
-		ecosystem: 'Экосистема',
-		applications: 'Приложения',
-		developers: 'Разработчикам',
-		contact: 'Контакты',
-		termsOfService: 'Условия обслуживания',
-		privacyPolicy: 'Политика конфиденциальности',
-		keyRegistry: 'Реестр ключей',
-		copyright: '© 2025–{year} MOTA'
+		home: "Главная",
+		ecosystem: "Экосистема",
+		applications: "Приложения",
+		developers: "Разработчикам",
+		contact: "Контакты",
+		termsOfService: "Условия обслуживания",
+		privacyPolicy: "Политика конфиденциальности",
+		keyRegistry: "Реестр ключей",
+		copyright: "© 2025–{year} MOTA"
 	},
 
 	modules: {},

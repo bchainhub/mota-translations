@@ -1,82 +1,82 @@
-import type { Translation } from '../i18n-types'
+import type { Translation } from "../i18n-types"
 
 const en: Translation = {
 	language: {
-		name: 'English',
-		fullName: 'English - International',
-		descriptiveName: 'English (Int)',
-		code: 'en',
-		icon: '🇺🇸',
+		name: "English",
+		fullName: "English - International",
+		descriptiveName: "English (Int)",
+		code: "en",
+		icon: "🇺🇸",
 		rtl: false
 	},
 
 	site: {
-		description: 'MOTA',
-		keywords: 'mota, sveltekit, dapp, blockchain, moneyx, paypass, ican, payto, oric, corepass, txms'
+		description: "MOTA",
+		keywords: "mota, sveltekit, dapp, blockchain, moneyx, paypass, ican, payto, oric, corepass, txms"
 	},
 
 	common: {
-		account: 'Account',
-		loading: 'Loading…',
-		error: 'Error',
-		success: 'Success',
-		cancel: 'Cancel',
-		confirm: 'Confirm',
-		close: 'Close',
-		back: 'Back',
-		menu: 'Menu',
-		next: 'Next',
-		submit: 'Submit',
-		save: 'Save',
-		edit: 'Edit',
-		delete: 'Delete',
-		logout: 'Logout',
-		online: 'Online',
-		offline: 'Offline',
+		account: "Account",
+		loading: "Loading…",
+		error: "Error",
+		success: "Success",
+		cancel: "Cancel",
+		confirm: "Confirm",
+		close: "Close",
+		back: "Back",
+		menu: "Menu",
+		next: "Next",
+		submit: "Submit",
+		save: "Save",
+		edit: "Edit",
+		delete: "Delete",
+		logout: "Logout",
+		online: "Online",
+		offline: "Offline",
 		theme: {
-			light: 'Light',
-			dark: 'Dark',
-			system: 'System'
+			light: "Light",
+			dark: "Dark",
+			system: "System"
 		}
 	},
 
 	helpers: {
 		coreIdValidation: {
-			error: 'Please enter a valid Core ID',
-			enterpriseError: 'Enterprise network addresses cannot be used for payments',
-			requiredError: 'Core ID is required'
+			error: "Please enter a valid Core ID",
+			enterpriseError: "Enterprise network addresses cannot be used for payments",
+			requiredError: "Core ID is required"
 		},
 		wallet: {
-			walletNotConfigured: 'Wallet is not configured.',
-			walletNotInstalled: 'Wallet is not installed or enabled.',
-			walletCannotConnect: 'Cannot connect to wallet.',
-			walletConnected: 'Wallet connected.',
-			walletDisconnected: 'Wallet disconnected.'
+			walletNotConfigured: "Wallet is not configured.",
+			walletNotInstalled: "Wallet is not installed or enabled.",
+			walletCannotConnect: "Cannot connect to wallet.",
+			walletConnected: "Wallet connected.",
+			walletDisconnected: "Wallet disconnected."
 		}
 	},
 
 	navbar: {
-		home: 'Home',
-		support: 'Support',
-		register: 'Register',
-		login: 'Login',
-		logout: 'Logout',
-		connect: 'Connect',
-		disconnect: 'Disconnect',
-		profile: 'Profile',
-		settings: 'Settings'
+		home: "Home",
+		support: "Support",
+		register: "Register",
+		login: "Login",
+		logout: "Logout",
+		connect: "Connect",
+		disconnect: "Disconnect",
+		profile: "Profile",
+		settings: "Settings"
 	},
 
 	footer: {
-		home: 'Home',
-		ecosystem: 'Ecosystem',
-		applications: 'Applications',
-		developers: 'Developers',
-		contact: 'Contact',
-		termsOfService: 'Terms of Service',
-		privacyPolicy: 'Privacy Policy',
-		keyRegistry: 'Key Registry',
-		copyright: '© Copyright 2025-{year} MOTA'
+		home: "Home",
+		ecosystem: "Ecosystem",
+		applications: "Applications",
+		developers: "Developers",
+		contact: "Contact",
+		termsOfService: "Terms of Service",
+		privacyPolicy: "Privacy Policy",
+		keyRegistry: "Key Registry",
+		copyright: "© Copyright 2025-{year} MOTA"
 	},
 
 	modules: {},
