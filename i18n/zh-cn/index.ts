@@ -73,7 +73,8 @@ const zhCNPartial: DeepPartial<Translation> = {
 		termsOfService: "服务条款",
 		privacyPolicy: "隐私政策",
 		keyRegistry: "密钥注册表",
-		copyright: "© 2025–{year} MOTA"
+		copyright: "© 2025–{year} MOTA",
+		poweredBy: "由 MOTA 提供支持"
 	},
 
 	modules: {},

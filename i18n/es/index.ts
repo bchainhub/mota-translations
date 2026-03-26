@@ -73,7 +73,8 @@ const esPartial: DeepPartial<Translation> = {
 		termsOfService: "Términos de servicio",
 		privacyPolicy: "Política de privacidad",
 		keyRegistry: "Registro de claves",
-		copyright: "© 2025–{year} MOTA"
+		copyright: "© 2025–{year} MOTA",
+		poweredBy: "Impulsado por MOTA"
 	},
 
 	modules: {},

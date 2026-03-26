@@ -78,7 +78,8 @@ const skPartial: DeepPartial<Translation> = {
 		termsOfService: "Podmienky používania",
 		privacyPolicy: "Zásady ochrany súkromia",
 		keyRegistry: "Register kľúčov",
-		copyright: "© 2025–{year} MOTA"
+		copyright: "© 2025–{year} MOTA",
+		poweredBy: "Poháňané na MOTA"
 	},
 
 	modules: {},

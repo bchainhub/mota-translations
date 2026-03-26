@@ -78,7 +78,8 @@ const ptBRPartial: DeepPartial<Translation> = {
 		termsOfService: "Termos de Serviço",
 		privacyPolicy: "Política de Privacidade",
 		keyRegistry: "Registro de Chaves",
-		copyright: "© 2025–{year} MOTA"
+		copyright: "© 2025–{year} MOTA",
+		poweredBy: "Impulsionado por MOTA"
 	},
 
 	modules: {},

@@ -73,7 +73,8 @@ const thPartial: DeepPartial<Translation> = {
 		termsOfService: "เงื่อนไขการให้บริการ",
 		privacyPolicy: "นโยบายความเป็นส่วนตัว",
 		keyRegistry: "ทะเบียนคีย์",
-		copyright: "© 2025–{year} MOTA"
+		copyright: "© 2025–{year} MOTA",
+		poweredBy: "ขับเคลื่อนโดย MOTA"
 	},
 
 	modules: {},
