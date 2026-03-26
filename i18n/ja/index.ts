@@ -73,7 +73,8 @@ const jaPartial: DeepPartial<Translation> = {
 		termsOfService: "利用規約",
 		privacyPolicy: "プライバシーポリシー",
 		keyRegistry: "キー登録",
-		copyright: "© 2025–{year} MOTA"
+		copyright: "© 2025–{year} MOTA",
+		poweredBy: "MOTA によって提供されています"
 	},
 
 	modules: {},

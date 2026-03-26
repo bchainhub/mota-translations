@@ -78,7 +78,8 @@ const ruPartial: DeepPartial<Translation> = {
 		termsOfService: "Условия обслуживания",
 		privacyPolicy: "Политика конфиденциальности",
 		keyRegistry: "Реестр ключей",
-		copyright: "© 2025–{year} MOTA"
+		copyright: "© 2025–{year} MOTA",
+		poweredBy: "Работает на MOTA"
 	},
 
 	modules: {},

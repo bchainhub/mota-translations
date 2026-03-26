@@ -76,7 +76,8 @@ const en: Translation = {
 		termsOfService: "Terms of Service",
 		privacyPolicy: "Privacy Policy",
 		keyRegistry: "Key Registry",
-		copyright: "© Copyright 2025-{year} MOTA"
+		copyright: "© Copyright 2025-{year} MOTA",
+		poweredBy: "Powered by MOTA"
 	},
 
 	modules: {},
