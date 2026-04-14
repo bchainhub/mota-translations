@@ -1,8 +1,13 @@
+import type { Translation } from '../i18n-types';
+import type { DeepPartial } from '$lib/helpers/i18n';
+import { deepMergeDict } from '$lib/helpers/i18n';
+import en from '../en/index';
+
 const itPartial: DeepPartial<Translation> = {
 	language: {
 		name: "Italiano",
 		fullName: "Italiano - Internazionale",
-		descriptiveName: "Italiano",
+		descriptiveName: "Italiano (Int)",
 		code: "it",
 		icon: "🇮🇹"
 	},
@@ -72,3 +77,6 @@ const itPartial: DeepPartial<Translation> = {
 		poweredBy: "Powered by MOTA"
 	}
 };
+
+const it: Translation = deepMergeDict(en as any, itPartial as DeepPartial<Translation>);
+export default it;
