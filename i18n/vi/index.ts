@@ -1,3 +1,8 @@
+import type { Translation } from '../i18n-types';
+import type { DeepPartial } from '$lib/helpers/i18n';
+import { deepMergeDict } from '$lib/helpers/i18n';
+import en from '../en/index';
+
 const viPartial: DeepPartial<Translation> = {
 	language: {
 		name: "Tiếng Việt",
@@ -72,3 +77,6 @@ const viPartial: DeepPartial<Translation> = {
 		poweredBy: "Được cung cấp bởi MOTA"
 	}
 };
+
+const vi: Translation = deepMergeDict(en as any, viPartial as DeepPartial<Translation>);
+export default vi;
